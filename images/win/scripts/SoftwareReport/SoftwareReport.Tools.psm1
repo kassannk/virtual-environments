@@ -270,3 +270,9 @@ function Get-SwigVersion {
     $swigVersion = $Matches.Version
     return "Swig $swigVersion"
 }
+
+function Get-KotlinVersion {
+    (konlinc -version | Out-String) -match "version (?<version>\d+\.\d+\.\d+)" | Out-Null
+    $kotlinVersion = $Matches.Version
+    return "Kotlin $kotlinVersion"
+}
