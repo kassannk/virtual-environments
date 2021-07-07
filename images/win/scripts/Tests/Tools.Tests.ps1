@@ -270,3 +270,9 @@ Describe "Swig" {
         "swig -version" | Should -ReturnZeroExitCode
     }
 }
+
+Describe "Kotlin" {
+    It "Kotlin" {
+        "kotlinc -version" | Should -ReturnZeroExitCode
+    }
+}
