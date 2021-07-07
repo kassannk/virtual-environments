@@ -35,6 +35,7 @@ $markdown += New-MDList -Style Unordered -Lines (@(
     (Get-BashVersion),
     (Get-GoVersion),
     (Get-JuliaVersion),
+    (Get-KotlinVersion),
     (Get-NodeVersion),
     (Get-PerlVersion),
     (Get-PHPVersion),
